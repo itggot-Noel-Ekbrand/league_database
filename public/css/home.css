@@ -1,0 +1,51 @@
+body {
+    background-color:#F49AFF;
+    margin: 0;
+    padding: 0;
+}
+
+/*https://color.adobe.com/sv/create/color-wheel/?base=2&rule=Shades&selected=2&name=Mitt%20Color-tema&mode=rgb&rgbvalues=0.7175242956527065,0.4521934387812243,0.75,0.47834953043513767,0.3014622925208162,0.5,0.9566990608702753,0.6029245850416324,1,0.23917476521756884,0.1507311462604081,0.25,0.8610291547832478,0.5426321265374692,0.9&swatchOrder=0,1,2,3,4
+*/
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeboy {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 50vh;
+    width: auto;
+    border: solid 0.1vh;
+    border-radius: 10vh;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchbar {
+    height: 5vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 2.5vh;
+    border: solid 0.1vh;
+    margin-bottom: 3vh;
+}
+
+.searchbutton {
+    background-color: #CBFF9A;
+    border: solid 0.1vh;
+    margin-top: 2vh;
+    height: 7vh;
+    width: 21vh;
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 2vh;
+    border-radius: 5vh;
+}
