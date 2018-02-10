@@ -7,26 +7,27 @@ html lang="en"
         link href="css/main.css" rel='stylesheet'/
         title Summoner Info
     body
-        p class="title" LEAGUE DATABASE
-        div class="column"
-            div class="row"
-                img src="http://opgg-static.akamaized.net/images/profile_icons/profileIcon#{slim_data[2]}.jpg" class="icon" 
-                p = slim_data[1]
-                p = slim_data[0]
-            - if slim_data[3] == nil 
-                div class="row1"
-                  img src="./img/tier-icons/base-icons/provisional.png" class="icon"
+        div class="container"
+            a class="title" href="./" LEAGUE DATABASE
+            div class="column"
+                div class="row"
+                    img src="http://opgg-static.akamaized.net/images/profile_icons/profileIcon#{slim_data[2]}.jpg" class="icon" 
+                    p class="level" = slim_data[1]
+                    p class="name" = slim_data[0]
+                - if slim_data[3] == nil 
+                    div class="row"
+                    img src="./img/tier-icons/base-icons/provisional.png" class="icon"
                     -slim_data[5] = 0
                     -slim_data[6] = 0
-                  p = 'Amount of wins' + ' ' + slim_data[5].to_s           
-                  p = 'Amount of losses' + ' ' + slim_data[6].to_s
-            - else
-                div class="row1"
-                 img src="./img/tier-icons/tier-icons/#{slim_data[7]}_#{slim_data[8]}.png" class="icon"
-                 p = slim_data[7] + ' ' + slim_data[8]
-                 p = 'Amount of wins' + ' ' + slim_data[5].to_s
-                 p = 'Amount of losses' + ' ' + slim_data[6].to_s
-                 /*p = 'Winrate is' + ' ' + summoner_wins/summoner_losses
-        img src="http://opgg-static.akamaized.net/images/lol/champion/#{slim_data[4]}.png?image=w_46&v=1" class="splash"
+                    p = 'Amount of wins:' + ' ' + slim_data[5].to_s           
+                    p = 'Amount of losses:' + ' ' + slim_data[6].to_s
+                - else
+                    div class="row1"
+                    img src="./img/tier-icons/tier-icons/#{slim_data[7]}_#{slim_data[8]}.png" class="icon"
+                    p = slim_data[7] + ' ' + slim_data[8]
+                    p = 'Amount of wins' + ' ' + slim_data[5].to_s
+                    p = 'Amount of losses' + ' ' + slim_data[6].to_s
+                    /*p = 'Winrate is' + ' ' + summoner_wins/summoner_losses
+                img src="http://opgg-static.akamaized.net/images/lol/champion/#{slim_data[4]}.png?image=w_46&v=1" class="splash"
             
             

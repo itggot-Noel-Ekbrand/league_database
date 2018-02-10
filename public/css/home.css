@@ -1,11 +1,11 @@
 body {
-    background-color:#F49AFF;
+    background-color:#8d8d8d;
     margin: 0;
     padding: 0;
 }
 
-/*https://color.adobe.com/sv/create/color-wheel/?base=2&rule=Shades&selected=2&name=Mitt%20Color-tema&mode=rgb&rgbvalues=0.7175242956527065,0.4521934387812243,0.75,0.47834953043513767,0.3014622925208162,0.5,0.9566990608702753,0.6029245850416324,1,0.23917476521756884,0.1507311462604081,0.25,0.8610291547832478,0.5426321265374692,0.9&swatchOrder=0,1,2,3,4
-*/
+
+
 div {
     display: flex;
     flex-direction: column;
@@ -40,12 +40,20 @@ div {
 }
 
 .searchbutton {
-    background-color: #CBFF9A;
-    border: solid 0.1vh;
+    background-color:#50a3e2 ;
+    border:none;
     margin-top: 2vh;
     height: 7vh;
     width: 21vh;
     font-family: "Helvetica Neue",sans-serif;
     font-size: 2vh;
-    border-radius: 5vh;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    color: white;
+    cursor: pointer;
+    border: 1px solid #527593!important;
+}
+
+.searchbutton:hover{
+    background-color:#247fcc;
+    
 }
